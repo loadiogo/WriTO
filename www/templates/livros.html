@@ -1,0 +1,19 @@
+
+
+<ion-view view-title="Meus Livros">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-plus" ng-click="addLivro()">
+    </button>
+  </ion-nav-buttons>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item ng-repeat="livro in livros" href="#/app/livros/{{livro.$id}}">
+      {{livro.name}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+</ion-view>
